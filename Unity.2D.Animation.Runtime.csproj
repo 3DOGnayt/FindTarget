@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{175AE05E-D567-ED13-6EAF-DC0CD0D60B2F}</ProjectGuid>
+    <ProjectGuid>{52BB23C1-ABAE-30D6-2A60-2BFDB6C049F4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Animation.Runtime</AssemblyName>
@@ -57,13 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkinBatch.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\UpdateBoundsJob.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\BufferManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\TransformAccessJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\NativeArrayHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkinManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkinBatch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\UpdateBoundsJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkinManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\DeformSpriteSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkinUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\Components.cs" />
@@ -74,6 +73,7 @@
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkinEntity.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteLib\SpriteLibraryAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\PrepareSkinningSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\BufferManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\Runtime\SpriteSkinComposite.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -311,17 +311,11 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -329,11 +323,14 @@
     <Reference Include="DOTweenEditor">
       <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenUpgradeManager">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenUpgradeManager.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -689,15 +686,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{C246C3E4-0FD4-BC1C-027A-41899988E43B}</Project>
+      <Project>{B90797E4-D519-5683-47B5-6E6ACEFFCB00}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{08CCDF47-F023-561E-5433-B582436761A4}</Project>
+      <Project>{45EB4D92-6AF8-6CB0-2424-893884851761}</Project>
       <Name>Unity.InternalAPIEngineBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{E4D7CC04-F1B7-89D8-310D-FBBE74256B50}</Project>
+      <Project>{48FAEE58-4AE1-BDC2-AC07-62AF67506DDD}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
   </ItemGroup>

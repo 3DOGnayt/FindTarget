@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DA5FBE46-A1E2-7A0C-C5E6-B69E3F459BFE}</ProjectGuid>
+    <ProjectGuid>{109E11C3-2CB8-09AB-5828-80170D089294}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Services.Core.Editor</AssemblyName>
@@ -56,72 +56,72 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\ServiceActivationPopupVisual.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ProjectStateRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ServiceFlagRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpRequestExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpServiceConfig.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AsyncOperation\IAsyncOperation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\ProjectBindVisual.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\InsufficientPermissionVisual.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceRegistry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\ReadOnlyHttpRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\ReadOnlyHttpResponse.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ProjectStateHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\ServiceInstallationListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceFlagEnabler.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\IProjectEditorDrawerFactory.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\VisualElementHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\BackendHelpers\JsonHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\IProjectStateHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\UserRequestVisual.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\SettingsCommonHeaderUiHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UserRoleManagement\UserRole.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ServiceFlags.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\SliderToggleUiHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\IEditorGameServiceIdentifier.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\IEditorGameService.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\LoggedOutUiHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Utils\MiniJson.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\IServiceFlags.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\Analytics\EditorGameServiceAnalyticsSender.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ProjectState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\PlatformSupportUiHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\IHttpClient.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\IServiceFlagRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\ExceptionVisual.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\ServiceActivationPopupVisual.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ProjectStateRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ServiceFlagRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UserRoleManagement\IUserRoleHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpRequestExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpServiceConfig.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\ServiceFlagEndpoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AsyncOperation\IAsyncOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\ProjectBindVisual.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\IProjectStateRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AsyncOperation\AsyncOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\InsufficientPermissionVisual.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\ExceptionHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\ReadOnlyHttpRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UserRoleManagement\IUserRoleRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\ReadOnlyHttpResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ProjectStateHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\ServiceInstallationListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AsyncOperation\AsyncOperationAwaiter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceFlagEnabler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\IProjectEditorDrawerFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AsyncOperation\AsyncOperationStatus.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\IEditorGameServiceEnabler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\VisualElementHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\BackendHelpers\JsonHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\ServiceActivationPopupWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AsyncOperation\AsyncOperationExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UserRoleManagement\UserRoleHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\IProjectStateHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\OfflineUiHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\UserRequestVisual.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UserRoleManagement\UserRole.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\SettingsCommonHeaderUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\ProjectBindAndUserRequestVisual.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\LoggedOutVisual.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ServiceFlags.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\SliderToggleUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\DefaultCdnConfiguredEndpoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceSettingsProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\AccessTokenErrorUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceDashboardHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\IEditorGameServiceIdentifier.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AsyncOperation\IAsyncOperationAwaiter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\IEditorGameService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\LoggedOutUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\UnityWebRequestClient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Utils\MiniJson.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\UserRoleRequestUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UserRoleManagement\UserRoleRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\IEditorGameServiceRegistry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\IServiceFlags.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\Analytics\EditorGameServiceAnalyticsSender.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\BackendHelpers\UnityWebRequestHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ProjectStateManagement\ProjectState.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\IActivationPopupVisual.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\ServiceActivationConfirmationVisual.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\CoppaVisual.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\UiHelpers\PlatformSupportUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\ServiceActivationPopup\Visuals\OfflineVisual.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\Networking\HttpRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.0.1\Editor\Core\EditorGameService\EditorGameServiceRemoteConfiguration.cs" />
   </ItemGroup>
@@ -381,17 +381,11 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -399,11 +393,14 @@
     <Reference Include="DOTweenEditor">
       <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenUpgradeManager">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenUpgradeManager.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -765,11 +762,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{0CA02DAA-3B1A-5120-C14C-F7396092BFE1}</Project>
+      <Project>{F7CC8024-F1E1-6C8A-CF9B-B1BD75A45005}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{08AD7A6B-3EAC-896E-7EE0-5D73B588BDFE}</Project>
+      <Project>{B467B8A0-C5D3-D0E1-DDC4-E169B47B3013}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

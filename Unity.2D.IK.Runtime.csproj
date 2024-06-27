@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{37003449-D3C2-76A6-9BB0-F8CBD975D29B}</ProjectGuid>
+    <ProjectGuid>{98129CF3-9D59-9142-9114-74CDC9EE13BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.IK.Runtime</AssemblyName>
@@ -56,18 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\IKManager2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\LimbSolver2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\Solvers\FABRIK2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\IKUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\CCDSolver2D.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\Solver2DMenuAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\IKManager2D.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\Solver2D.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\IKManager2DEditorData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\LimbSolver2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\Solvers\FABRIK2D.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\Solvers\CCD2D.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\IKChain2D.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\Solvers\Limb.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\IKUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Runtime\FabrikSolver2D.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -305,17 +305,11 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -323,11 +317,14 @@
     <Reference Include="DOTweenEditor">
       <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenUpgradeManager">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenUpgradeManager.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

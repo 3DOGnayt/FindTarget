@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{23BE740F-E200-8FD4-7DC1-3301D7825F58}</ProjectGuid>
+    <ProjectGuid>{F006EF4D-9679-E9A6-EEC3-A45590CB88AD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.IK.Editor</AssemblyName>
@@ -57,12 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\IKEditorManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\IKGizmos.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\Inspectors\Solver2DEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\Inspectors\CCDSolver2DEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\Inspectors\IKManager2DEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\Inspectors\LimbSolver2DEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\IKGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\Inspectors\Solver2DEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.10\IK\Editor\Inspectors\FabrikSolver2DEditor.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -300,17 +300,11 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -318,11 +312,14 @@
     <Reference Include="DOTweenEditor">
       <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenUpgradeManager">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenUpgradeManager.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -684,35 +681,35 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{C54B2AB6-93F1-1F0D-81C0-E81B5E3C7B04}</Project>
+      <Project>{22281D03-4D30-C913-0D6D-7E81D07BD3D3}</Project>
       <Name>Unity.InternalAPIEditorBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{08CCDF47-F023-561E-5433-B582436761A4}</Project>
+      <Project>{45EB4D92-6AF8-6CB0-2424-893884851761}</Project>
       <Name>Unity.InternalAPIEngineBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{3F7FF506-6368-2B86-9BB0-A1462EA0488A}</Project>
+      <Project>{9CBF3A88-9CFA-95A5-28D5-81E29788AB3C}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{C246C3E4-0FD4-BC1C-027A-41899988E43B}</Project>
+      <Project>{B90797E4-D519-5683-47B5-6E6ACEFFCB00}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
-      <Project>{37003449-D3C2-76A6-9BB0-F8CBD975D29B}</Project>
+      <Project>{98129CF3-9D59-9142-9114-74CDC9EE13BB}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{434690AC-38D8-3096-7651-BFFE8E0A5A32}</Project>
+      <Project>{565FE254-0262-3957-0D1B-CC0F5684CD25}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{0CA02DAA-3B1A-5120-C14C-F7396092BFE1}</Project>
+      <Project>{F7CC8024-F1E1-6C8A-CF9B-B1BD75A45005}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{08AD7A6B-3EAC-896E-7EE0-5D73B588BDFE}</Project>
+      <Project>{B467B8A0-C5D3-D0E1-DDC4-E169B47B3013}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

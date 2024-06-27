@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AC0C86A0-C0A9-AFBD-BACB-560066D2E496}</ProjectGuid>
+    <ProjectGuid>{5E66CB5A-A17C-CD0E-B7DA-9AF9C9260B98}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.SpriteShape.Runtime</AssemblyName>
@@ -56,24 +56,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Tess.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\UTess2D\Tessellator.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\SpriteShapeGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\SplineUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Mesh.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\SpriteShapeGeometryCache.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Geom.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\MeshUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Tess.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Dict.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\BezierUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\Spline.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\PriorityHeap.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\SpriteShapeController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\UTess2D\ArraySlice.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\SpriteShape.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Sweep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Mesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\SpriteShapeGeometryCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\Geom.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\MeshUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.7\Runtime\External\LibTessDotNet\LICENSE.txt" />
@@ -311,17 +311,11 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -329,11 +323,14 @@
     <Reference Include="DOTweenEditor">
       <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenUpgradeManager">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenUpgradeManager.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -689,11 +686,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{C246C3E4-0FD4-BC1C-027A-41899988E43B}</Project>
+      <Project>{B90797E4-D519-5683-47B5-6E6ACEFFCB00}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{E4D7CC04-F1B7-89D8-310D-FBBE74256B50}</Project>
+      <Project>{48FAEE58-4AE1-BDC2-AC07-62AF67506DDD}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
   </ItemGroup>
