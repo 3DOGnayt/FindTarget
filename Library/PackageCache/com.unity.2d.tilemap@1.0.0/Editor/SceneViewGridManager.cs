@@ -16,12 +16,17 @@ namespace UnityEditor.Tilemaps
         [SerializeField]
         private GridLayout m_ActiveGridProxy;
 
+        [SerializeField]
+        private bool m_RegisteredGridProxy;
+
         private Dictionary<SceneView, bool> m_SceneViewShowGridMap;
 
         private bool m_RegisteredEventHandlers;
 
         private bool active { get { return m_ActiveGridProxy != null; } }
         internal GridLayout activeGridProxy { get { return m_ActiveGridProxy; } }
+
+        private UnityType m_GridType;
 
         [InitializeOnLoadMethod]
         private static void Initialize()
@@ -49,6 +54,8 @@ namespace UnityEditor.Tilemaps
             GridPaintingState.scenePaintTargetChanged += OnScenePaintTargetChanged;
             GridSnapping.snapPosition = OnSnapPosition;
             GridSnapping.activeFunc = GetActive;
+
+            m_GridType = UnityType.FindTypeByName("Grid");
 
             m_RegisteredEventHandlers = true;
         }
@@ -87,14 +94,14 @@ namespace UnityEditor.Tilemaps
         private void UpdateCache()
         {
             GridLayout gridProxy;
-            if (PaintableGrid.InGridEditMode())
+            if (PaintableGrid.InGridEditMode() || GridSelectionTool.IsActive())
                 gridProxy = GridPaintingState.scenePaintTarget != null ? GridPaintingState.scenePaintTarget.GetComponentInParent<GridLayout>() : null;
             else
                 gridProxy = Selection.activeGameObject != null ? Selection.activeGameObject.GetComponentInParent<GridLayout>() : null;
 
-            if (gridProxy != m_ActiveGridProxy)
+            if (gridProxy != m_ActiveGridProxy || (m_RegisteredGridProxy && gridProxy == null))
             {
-                if (m_ActiveGridProxy == null)
+                if (!m_RegisteredGridProxy && m_ActiveGridProxy == null)
                 {
                     // Disable SceneView grid if there is now a GridProxy. Store user settings to be restored.
                     StoreSceneViewShowGrid(false);
@@ -104,6 +111,7 @@ namespace UnityEditor.Tilemaps
                     RestoreSceneViewShowGrid();
                 }
                 m_ActiveGridProxy = gridProxy;
+                m_RegisteredGridProxy = m_ActiveGridProxy != null;
                 FlushCachedGridProxy();
                 SceneView.RepaintAll();
             }
@@ -119,9 +127,22 @@ namespace UnityEditor.Tilemaps
             }
         }
 
+        internal bool IsGridAnnotationEnabled()
+        {
+            var annotations = AnnotationUtility.GetAnnotations();
+            foreach (var annotation in annotations)
+            {
+                if (annotation.classID == m_GridType.persistentTypeID)
+                {
+                    return annotation.gizmoEnabled > 0;
+                }
+            }
+            return false;
+        }
+
         private void OnSceneGuiDelegate(SceneView sceneView)
         {
-            if (active)
+            if (active && sceneView.drawGizmos && IsGridAnnotationEnabled())
                 DrawGrid(activeGridProxy);
         }
 
