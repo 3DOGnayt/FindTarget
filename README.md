@@ -20,6 +20,6 @@ However, in my opinion, for prototyping this is the best thing to see how the ga
 
 <div align="center" valign="middle" style="page-break-after: always;">
 <br>
-    <img src="Documentation/FindTarget_Demonstration.gif" width = "800" />
+    <img src="Assets/Documentation/FindTarget_Demonstration.gif" width = "800" />
 <br>
 </div>
